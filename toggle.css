@@ -1,0 +1,106 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: montserrat;
+	overflow: hidden;
+}
+header
+{
+	height: 10vh;
+	width: 100%;
+	background: #7cf79d;
+}
+
+.navbar
+{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar h1
+{
+	display: inline;
+}
+.burgur
+{
+	display: none;
+	cursor: pointer;
+}
+.burgur div
+{
+	height: 3px;
+	width: 23px;
+	margin: 4px;
+	background-color: black;
+}
+.burgur:active div
+{
+	height: 2.5px;
+}
+.menu
+{
+	
+}
+.menu a
+{
+	display: block; 
+}
+main
+{
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.showHide
+{
+	height: 20vh;
+	margin: 0 auto;
+	transition: all 0.3s ease-in;
+}
+.showHideActive
+{
+	height: 20vh;
+	background-color: green;
+}
+.button
+{
+	border: 2px solid black;
+	padding: 2px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.button:active
+{
+	font-size: 19px;
+}
+@media screen and (max-width: 768px)
+{
+	.burgur
+	{
+		display: block;
+	}
+	.menu
+	{
+		position: absolute;
+		top: 10vh;
+		right: 0;
+		background: rgba(124, 247, 157,0.5);
+		height: 90vh;
+		width: 50%;
+		transform: translateX(100%);
+		transition: all 0.4s ease-in;
+		text-align: center;
+	}
+	.menuActive
+	{
+		transform: translateX(0%);
+	}
+}

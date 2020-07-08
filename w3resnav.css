@@ -1,0 +1,90 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navlinks ul
+{
+	list-style-type: none;
+	background-color: #05a10a;
+	overflow: hidden;
+
+}
+
+.navlinks ul li
+{
+	float: left;
+}
+.navlinks ul li a.active
+{
+	background-color: #4788fc;
+	color: #ffffff;
+}
+.navlinks ul li a:hover:not(.active), .dropbtn:hover
+{
+	background-color: #fa4b4b;
+	color: white;
+}
+.dropdown .dropbtn:hover span.arrow
+{
+	color: white;
+}
+.navlinks ul li a, .dropbtn
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: #b1ccfc;
+	display: block;
+	padding: 15px;
+	text-align: center;	
+}
+.dropbtn
+{
+	cursor: pointer;
+	padding: 13px;
+}
+.navlinks ul li.dropdown:hover .dropbtn
+{
+	background-color: #fa4b4b;
+	color: white;
+}
+.navlinks ul li.dropdown span.arrow
+{
+	color: black;
+	font-weight: bolder;
+	display: inline-block;
+	transform: rotate(-45deg);
+	margin: 0 10px; 
+	transition: all 0.1s linear;
+}
+.navlinks ul li.dropdown span.arrowRotate
+{
+	transform: rotate(45deg);
+}
+.navlinks ul li.dropdown .dropdown-items
+{
+	display: none;
+	position: absolute;
+	background-color: #000000;
+	transition: all 0.5s linear;
+}
+.navlinks ul li.dropdown .dropdown-items-show
+{
+	display: block;
+}
+.navlinks ul li.dropdown .dropdown-items a
+{
+	color: white
+}
+.navlinks ul li.dropdown .dropdown-items a:hover
+{
+	background-color: grey;
+}
+@media screen and (max-width: 768px)
+{
+	.navlinks ul li
+	{
+		float: none;
+	}
+}
